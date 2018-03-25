@@ -25,8 +25,8 @@ li#welcome-section-tab {
 }
 @media (max-device-width: 480px) {
   #welcome {
-    min-width: none !important;
-    max-width: none !important;
+    min-width: 0 !important;
+    max-width: 0 !important;
   }
 }
 #welcome h2 {
