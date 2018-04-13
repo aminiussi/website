@@ -5,10 +5,11 @@
         New Libraries:
         Contract, HOF.
         Updated Libraries:
-        Asio, Atomic, Beast, Container Hash, Context, Coroutine2,
-        DateTime, DLL, Fiber, Fusion, Log, Multi-index Containers,
-        Optional, Phoenix, PolyCollection, Spirit, Stacktrace,
-        Test, TypeIndex, Unordered, Units, Uuid, Utility, Variant.
+        Asio, Atomic, Beast, Container Hash, Context, Core, Coroutine2,
+        DateTime, DLL, Fiber, Filesystem, Fusion, Locale, Log,
+        Math, Multi-index Containers, Multiprecision,
+        Optional, Phoenix, PolyCollection, Python, Spirit, Stacktrace,
+        Test, TypeIndex, TypeTraits, Unordered, Units, Uuid, Utility, Variant.
     ]
     [authors [James, Daniel]]
     [/ last-revision is used for the final release date]
@@ -41,6 +42,30 @@
     * Added `experimental::detached` completion token.
     * Added `experimental::redirect_error` completion token.
     * Added `experimental::co_spawn` facility for integration with the coroutines technical specification.
+    * Updated timeout examples to use latest features.
+    * Used `asio::steady_timer` rather than `asio::deadline_timer`.
+    * Used `asio::dynamic_buffer` rather than `asio::streambuf`.
+    * Used timed `asio::io_context::run_for()` function for blocking clients.
+    * Added example showing a custom completion token for blocking with timeouts.
+  * Fixed unit tests to compile when `BOOST_ASIO_NO_DEPRECATED` is defined.
+  * Changed socket iostreams to use chrono by default, to fix compatibility with the Networking TS. Define `BOOST_ASIO_USE_BOOST_DATE_TIME_FOR_SOCKET_IOSTREAM` to enable the old Boost.Date_Time interface in `basic_socket_streambuf` and `basic_socket_iostream`.
+  * Updated examples to use chrono rather than Boost.Date_Time.
+  * Fixed an incorrect member function detector in the `is_dynamic_buffer` trait.
+  * Fixed an `async_result` incompatibility with deprecated `handler_type`.
+  * Added a missing move optimisation in the SSL stream implementation.
+  * Fixed incorrect `basic_resolver_results::value_type` typedef.
+  * Fixed a compile error with some OpenSSL versions when `SSL_OP_NO_COMPRESSION` is defined.
+  * Changed `add_certificate_authority` to process multiple certificates in a bundle.
+  * Eliminated deprecation warning with MSVC by using `std::invoke_result` rather than `std::result_of`.
+  * Changed to use `std::string_view` for C++17 or later, and `std::experimental::string_view` for C++14. Define the preprocessor macro `BOOST_ASIO_DISABLE_STD_STRING_VIEW` to force the use of std::experimental::string_view (assuming it is available) when compiling in C++17 mode.
+  * Ensured `DynamicBuffer` template arguments are decayed before using in `enable_if` tests.
+  * Changed documentation to distinguish legacy completion handlers (which are still required to be CopyConstructible) from new MoveConstructible handlers.
+  * Suppressed a discarded return value warning in the buffer debugging support.
+  * Fixed `basic_yield_context` to work with completion signatures containing reference parameters.
+  * Ensured that stackful coroutines launched using `spawn()` correctly store decayed copies of their function and handler arguments.
+  * Fixed some compatibility issues with Android.
+  * Added cross-compilation support to Jamfiles.
+  * Fixed some minor portability issues in examples.
 
 * [phrase library..[@/libs/atomic/ Atomic]:]
   * [*Breaking change:] Changed the result of the `(op)_and_test` operations added in Boost 1.66 to the opposite - the functions now return `true` if the operation result is non-zero. This is consistent with other `test` methods in Boost.Atomic and the C++ standard library. Users can define `BOOST_ATOMIC_DETAIL_HIGHLIGHT_OP_AND_TEST` when compiling their code to emit warnings on every use of the changed functions. This way users can locate the code that needs to be updated. ([github atomic 11])
@@ -68,6 +93,8 @@
     will still work.
   * Added support for `std::string_view`, `std::error_code`, `std::error_condition`
     `std::optional`, `std::variant`, `std::monostate` where available.
+  * Added explicit support for `vector<bool>`, so that it will work with
+    libc++ ([ticket 13501]).
   * More detail in the
     [@/doc/html/hash/changes.html#hash.changes.boost_1_67_0 library change log].
 
@@ -76,6 +103,12 @@
   * [github context 65]: `__sanitizer_finish_switch_fiber` should be called directly after context switch
   * [github context 66]: Clang on Windows : error: No best alternative for libs/context/build/asm_sources
   * [github context 73]: fixing C2492 for execution_context (v1)
+  * known bug: including all.hpp + <context-impl>ucontext/winfib causes error 'forced_unwind: is not a member of boost::context::detail'
+
+* [phrase library..[@/libs/core/ Core]:]
+  * Updated `to_address` and `pointer_traits` to reflect the design adopted for C++2a in
+    [@http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0653r2.html P0653R2]
+    (Glen Fernandes).
 
 * [phrase library..[@/libs/coroutine2/ Coroutine2]:]
   * [github coroutine2 13]: Pull coroutine does not rethrow an exception if it is thrown on the first entry
@@ -124,6 +157,9 @@
   * [github fiber 167]: call shared_state::owner_destroyed() only if future was created from
   * [github fiber 168]: fiber/doc/installing.qbk not not up to date
 
+* [phrase library..[@/libs/filesystem/ Filesystem]:]
+  * Fix static initialization issue that caused a crash if path operations were used before main() ([github_pr filesystem 62], [github_pr filesystem 43], [github_pr filesystem 50], [github_pr filesystem 59])
+
 * [phrase library..[@/libs/fusion/ Fusion]:]
   * Switch to SFINAE in template parameters on `fusion::map` to fix compile error on newer MSVC 2017. ([github_pr fusion 164])
   * Fix for compilers not compatible with CWG defect 945 on `fusion::vector`. ([github_pr fusion 166])
@@ -131,10 +167,27 @@
   * Allow incomplete types in `fusion::tag_of` and `fusion::is_native_fusion_sequence`.
     Note that this changes no behaviour from previous release, but compliant to TypeTraits's change. ([github_pr fusion 171])
 
+* [phrase library..[@/libs/locale/ Locale]:]
+  * Added support of `unique_ptr` interface in addition to C++2003 `auto_ptr` - in order to support C++2017, now you can use `BOOST_LOCALE_HIDE_AUTO_PTR` definiton to remove `auto_ptr` from the interfaces and prevent deprecated watnings.
+  * Fixed test problem with ICU >60.1
+  * Fix of solaris build
+  * Fixed wired FreeBSD/clang issue on optimized build. Probably compiler workaround
+  * Added workaround for failing MSVC tests due to 932 codepage codecvt issue
+  * Fixed bugs 6851, 12572, 12453
+  * Fixed missing throw in case of failure in `icu/date_time`
+  * Fixed build agains Boost.Thread v4
+  * Fixed Year of week instead of year ICU backend formatting
+  * Fixed formatting test for ICU 56.1 and above
+
+
 * [phrase library..[@/libs/log/ Log]:]
   * Improved compatibility with C++17: use `allocator_traits` to work with allocators instead of directly accessing its members.
   * Improved compatibility with gcc 7 and later by updating library ABI namespace definition.
   * Added documentation for the "Append" config file parameter for "TextFile" sinks. The parameter was supported previously, only the documentation was missing.
+
+* [phrase library..[@/libs/math/index.html Math]:]
+  * Add naive Monte Carlo integration support.
+  * Add Chebyshev interpolation routines.
 
 * [phrase library..[@/libs/multi_index/index.html Multi-index Containers]:]
   * Elements with overloaded `operator&` are now fully accepted (ticket [ticket 13307]).
@@ -143,6 +196,20 @@
   * Avoided usage of `std::allocator` members deprecated in C++17.
     Contributed by Daniela Engert.
   * Maintenance fixes.
+  
+* [phrase library..[@/libs/multiprecision/index.html Multiprecision]:]
+  * [*Breaking Change:] When converting a multiprecision integer to a narrower type, if the value is too large (or negative) to
+    fit in the smaller type, then the result is either the maximum (or minimum) value of the target type.  This was always the intended
+    behaviour, but was somewhat haphazardly enforced before.  If you really do want just the low order N bits of a value, then you will
+    need to mask these out prior to the case, for example: `static_cast<unsigned>(~static_cast<unsigned>(0) & my_value)`.  Note that
+    technically (to avoid undefined behaviour) you should do the same thing with built in integer types too.
+    See [@https://svn.boost.org/trac/boost/ticket/13109 #13109].
+  * Fix bug in conversion of decimal to rational types (zero needs special handling), see [@https://svn.boost.org/trac/boost/ticket/13148 #13148].
+  * Fix conversion from cpp_bin_float to a wider built in integer type, see [@https://svn.boost.org/trac/boost/ticket/13301 #13301].
+  * Improve performance heurists used in cpp_bin_float exp function.
+  * Fix bug in floor/ceil and cpp_bin_float when the exponent type is wider than an int, see [@https://svn.boost.org/trac/boost/ticket/13264 #13264].
+  * Disable explicit conversion operator when the target type is already constructible from this type, see  [@https://github.com/boostorg/multiprecision/issues/30 #30].
+  * Fix support for changes new to MPIR-3.0, see [@https://svn.boost.org/trac/boost/ticket/13124 #13124].
 
 * [phrase library..[@/libs/optional/index.html Optional]:]
   * Fixed issue [github optional 46]
@@ -157,6 +224,13 @@
 
 * [phrase library..[@/libs/poly_collection/ PolyCollection]:]
   * Maintenance fixes.
+
+* [phrase library..[@/libs/python/ Python]:]
+  * The library name now includes the version suffix of the Python version used to compile it.
+    For example, a variant compiled with Python 2.7 will produce library names
+    `boost_python27` and `boost_numpy27`, etc..
+    Combined with a related fix in Boost.Build, this means that it is now possible to build variants for multiple
+    Python versions in a single build process.
 
 * [phrase library..[@/libs/spirit/ Spirit]:]
   * Spirit.X3:
@@ -236,6 +310,17 @@
   * [@/libs/container_hash/ ContainerHash] library is now used to reduce dependencies.
   * Minor fixes (including [github type_index 17])
 
+* [phrase library..[@/libs/type_traits/ TypeTraits]:]
+  * Added new traits `detected`, `detected_or`, `is_detected`, `is_detected_convertible`, `is_detected_exact`, `is_complete`.
+  * Added greatly improved code for detecting binary operators.
+  * Add assertions for completeness to traits which require complete types as arguments: this prevents various traits from giving eroneous results from incomplete types.
+  * Fix minor issue with mpl compatibility, see [@https://svn.boost.org/trac/boost/ticket/12212 #12212].
+  * Add macro to indicate when `is_constructible` is fully implemented, see [@https://svn.boost.org/trac/boost/ticket/12003 #12003].
+  * Update `is_function` and `is_member_function_pointer` to work correctly with C++17 noexcept specifications.
+  * Add workaround for `is_default_constructible` and `std::pair`.
+  * Added fallback for `is_nothrow_swappable` on pre-C++11 compilers.
+
+
 * [phrase library..[@/libs/utility/ Utility]:]
   * [*Breaking change:]
     `<boost/utility.hpp>` header no longer includes `boost::next` and `boost::prior`
@@ -263,6 +348,7 @@
   * minor documentation fixes
 
 * [phrase library..[@/libs/uuid/ Uuid]:]
+  * [*Breaking change:] random_generator is no longer copyable ([github uuid 61])
   * Optimized random_generator to use OS-provided entropy directly ([github_pr uuid 53])
   * Provide `random_generator_mt19937` for bulk UUID generation
   * Handle entropy acquisition errors instead of ignoring them
@@ -303,10 +389,6 @@ Boost's primary test compilers are:
   * GCC, C++11: 4.7.3, 4.8.1, 4.9.3
   * GCC, C++14: 5.1.0, 5.2.0, 5.3.0, 6.1.0, 6.2.0, 6.3.0, 6.4.0, 7.1.0
   * Visual C++: 7.1, 8.0, 9.0, 10.0, 11.0, 12.0, 14.0, 14.1
-* Android:
-  * Clang: 3.6, 3.7, 3.8
-  * GCC: 4.9, 5.4
-  * GCC, C++14: 6.2
 
 Boost's additional test compilers include:
 
@@ -333,10 +415,6 @@ Boost's additional test compilers include:
   * GCC, C++11: 4.7.3, 4.8.1, 4.9.3
   * GCC, C++14: 5.1.0, 5.2.0, 5.3.0, 6.1.0, 6.2.0, 6.3.0, 6.4.0, 7.1.0
   * Visual C++: 7.1, 8.0, 9.0, 10.0, 11.0, 12.0, 14.0, 14.1
-* Android:
-  * Clang: 3.6, 3.7, 3.8
-  * GCC: 4.9, 5.4
-  * GCC, C++14: 6.2
 * FreeBSD:
   * Clang: 4.0.0
   * Clang, C++11: 4.0.0
