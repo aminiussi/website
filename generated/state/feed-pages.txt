@@ -1,4 +1,6 @@
 (feed/downloads/bjam_3_1_18.qbk
+-guid
+"http://www.boost.org/users/download/boost_jam_3_1_18.html
 -id
 "boost_jam_3_1_18
 -last_modified
@@ -28,6 +30,8 @@
 =0
 )
 (feed/history/boost_1_10_3.qbk
+-guid
+"http://www.boost.org/users/history/version_1_10_3.html
 -id
 "version_1_10_3
 -last_modified
@@ -54,6 +58,8 @@
 =0
 )
 (feed/history/boost_1_10_4.qbk
+-guid
+"http://www.boost.org/users/history/version_1_10_4.html
 -id
 "version_1_10_4
 -last_modified
@@ -79,6 +85,8 @@
 =0
 )
 (feed/history/boost_1_11_0.qbk
+-guid
+"http://www.boost.org/users/history/version_1_11_0.html
 -id
 "version_1_11_0
 -last_modified
@@ -105,6 +113,8 @@
 =0
 )
 (feed/history/boost_1_11_1.qbk
+-guid
+"http://www.boost.org/users/history/version_1_11_1.html
 -id
 "version_1_11_1
 -last_modified
@@ -130,6 +140,8 @@
 =0
 )
 (feed/history/boost_1_11_2.qbk
+-guid
+"http://www.boost.org/users/history/version_1_11_2.html
 -id
 "version_1_11_2
 -last_modified
@@ -155,6 +167,8 @@
 =0
 )
 (feed/history/boost_1_12_0.qbk
+-guid
+"http://www.boost.org/users/history/version_1_12_0.html
 -id
 "version_1_12_0
 -last_modified
@@ -180,6 +194,8 @@
 =0
 )
 (feed/history/boost_1_13_0.qbk
+-guid
+"http://www.boost.org/users/history/version_1_13_0.html
 -id
 "version_1_13_0
 -last_modified
@@ -205,6 +221,8 @@
 =0
 )
 (feed/history/boost_1_14_0.qbk
+-guid
+"http://www.boost.org/users/history/version_1_14_0.html
 -id
 "version_1_14_0
 -last_modified
@@ -230,6 +248,8 @@
 =0
 )
 (feed/history/boost_1_14_1.qbk
+-guid
+"http://www.boost.org/users/history/version_1_14_1.html
 -id
 "version_1_14_1
 -last_modified
@@ -256,6 +276,8 @@
 =0
 )
 (feed/history/boost_1_14_2.qbk
+-guid
+"http://www.boost.org/users/history/version_1_14_2.html
 -id
 "version_1_14_2
 -last_modified
@@ -281,6 +303,8 @@
 =0
 )
 (feed/history/boost_1_14_3.qbk
+-guid
+"http://www.boost.org/users/history/version_1_14_3.html
 -id
 "version_1_14_3
 -last_modified
@@ -306,6 +330,8 @@
 =0
 )
 (feed/history/boost_1_15_0.qbk
+-guid
+"http://www.boost.org/users/history/version_1_15_0.html
 -id
 "version_1_15_0
 -last_modified
@@ -331,6 +357,8 @@
 =0
 )
 (feed/history/boost_1_15_1.qbk
+-guid
+"http://www.boost.org/users/history/version_1_15_1.html
 -id
 "version_1_15_1
 -last_modified
@@ -356,6 +384,8 @@
 =0
 )
 (feed/history/boost_1_16_0.qbk
+-guid
+"http://www.boost.org/users/history/version_1_16_0.html
 -id
 "version_1_16_0
 -last_modified
@@ -382,6 +412,8 @@
 =0
 )
 (feed/history/boost_1_16_1.qbk
+-guid
+"http://www.boost.org/users/history/version_1_16_1.html
 -id
 "version_1_16_1
 -last_modified
@@ -407,6 +439,8 @@
 =0
 )
 (feed/history/boost_1_17_0.qbk
+-guid
+"http://www.boost.org/users/history/version_1_17_0.html
 -id
 "version_1_17_0
 -last_modified
@@ -433,6 +467,8 @@
 =0
 )
 (feed/history/boost_1_18_0.qbk
+-guid
+"http://www.boost.org/users/history/version_1_18_0.html
 -id
 "version_1_18_0
 -last_modified
@@ -459,6 +495,8 @@
 =0
 )
 (feed/history/boost_1_18_1.qbk
+-guid
+"http://www.boost.org/users/history/version_1_18_1.html
 -id
 "version_1_18_1
 -last_modified
@@ -484,6 +522,8 @@
 =0
 )
 (feed/history/boost_1_18_2.qbk
+-guid
+"http://www.boost.org/users/history/version_1_18_2.html
 -id
 "version_1_18_2
 -last_modified
@@ -510,6 +550,8 @@
 =0
 )
 (feed/history/boost_1_18_3.qbk
+-guid
+"http://www.boost.org/users/history/version_1_18_3.html
 -id
 "version_1_18_3
 -last_modified
@@ -535,6 +577,8 @@
 =0
 )
 (feed/history/boost_1_19_0.qbk
+-guid
+"http://www.boost.org/users/history/version_1_19_0.html
 -id
 "version_1_19_0
 -last_modified
@@ -561,6 +605,8 @@
 =0
 )
 (feed/history/boost_1_20_0.qbk
+-guid
+"http://www.boost.org/users/history/version_1_20_0.html
 -id
 "version_1_20_0
 -last_modified
@@ -586,6 +632,8 @@
 =0
 )
 (feed/history/boost_1_20_1.qbk
+-guid
+"http://www.boost.org/users/history/version_1_20_1.html
 -id
 "version_1_20_1
 -last_modified
@@ -611,6 +659,8 @@
 =0
 )
 (feed/history/boost_1_20_2.qbk
+-guid
+"http://www.boost.org/users/history/version_1_20_2.html
 -id
 "version_1_20_2
 -last_modified
@@ -637,6 +687,8 @@
 =0
 )
 (feed/history/boost_1_21_0.qbk
+-guid
+"http://www.boost.org/users/history/version_1_21_0.html
 -id
 "version_1_21_0
 -last_modified
@@ -663,6 +715,8 @@
 =0
 )
 (feed/history/boost_1_21_1.qbk
+-guid
+"http://www.boost.org/users/history/version_1_21_1.html
 -id
 "version_1_21_1
 -last_modified
@@ -688,6 +742,8 @@
 =0
 )
 (feed/history/boost_1_21_2.qbk
+-guid
+"http://www.boost.org/users/history/version_1_21_2.html
 -id
 "version_1_21_2
 -last_modified
@@ -713,6 +769,8 @@
 =0
 )
 (feed/history/boost_1_22_0.qbk
+-guid
+"http://www.boost.org/users/history/version_1_22_0.html
 -id
 "version_1_22_0
 -last_modified
@@ -738,6 +796,8 @@
 =0
 )
 (feed/history/boost_1_23_0.qbk
+-guid
+"http://www.boost.org/users/history/version_1_23_0.html
 -id
 "version_1_23_0
 -last_modified
@@ -764,6 +824,8 @@
 =0
 )
 (feed/history/boost_1_24_0.qbk
+-guid
+"http://www.boost.org/users/history/version_1_24_0.html
 -id
 "version_1_24_0
 -last_modified
@@ -789,6 +851,8 @@
 =0
 )
 (feed/history/boost_1_25_0.qbk
+-guid
+"http://www.boost.org/users/history/version_1_25_0.html
 -id
 "version_1_25_0
 -last_modified
@@ -815,6 +879,8 @@
 =0
 )
 (feed/history/boost_1_25_1.qbk
+-guid
+"http://www.boost.org/users/history/version_1_25_1.html
 -id
 "version_1_25_1
 -last_modified
@@ -840,6 +906,8 @@
 =0
 )
 (feed/history/boost_1_26_0.qbk
+-guid
+"http://www.boost.org/users/history/version_1_26_0.html
 -id
 "version_1_26_0
 -last_modified
@@ -866,6 +934,8 @@
 =0
 )
 (feed/history/boost_1_27_0.qbk
+-guid
+"http://www.boost.org/users/history/version_1_27_0.html
 -id
 "version_1_27_0
 -last_modified
@@ -892,6 +962,8 @@
 =0
 )
 (feed/history/boost_1_28_0.qbk
+-guid
+"http://www.boost.org/users/history/version_1_28_0.html
 -id
 "version_1_28_0
 -last_modified
@@ -918,6 +990,8 @@
 =0
 )
 (feed/history/boost_1_29_0.qbk
+-guid
+"http://www.boost.org/users/history/version_1_29_0.html
 -id
 "version_1_29_0
 -last_modified
@@ -944,6 +1018,8 @@
 =0
 )
 (feed/history/boost_1_30_0.qbk
+-guid
+"http://www.boost.org/users/history/version_1_30_0.html
 -id
 "version_1_30_0
 -last_modified
@@ -970,6 +1046,8 @@
 =0
 )
 (feed/history/boost_1_30_1.qbk
+-guid
+"http://www.boost.org/users/history/version_1_30_1.html
 -id
 "version_1_30_1
 -last_modified
@@ -996,6 +1074,8 @@
 =0
 )
 (feed/history/boost_1_30_2.qbk
+-guid
+"http://www.boost.org/users/history/version_1_30_2.html
 -id
 "version_1_30_2
 -last_modified
@@ -1021,6 +1101,8 @@
 =0
 )
 (feed/history/boost_1_31_0.qbk
+-guid
+"http://www.boost.org/users/history/version_1_31_0.html
 -id
 "version_1_31_0
 -last_modified
@@ -1048,6 +1130,8 @@
 =0
 )
 (feed/history/boost_1_32_0.qbk
+-guid
+"http://www.boost.org/users/history/version_1_32_0.html
 -id
 "version_1_32_0
 -last_modified
@@ -1075,10 +1159,12 @@
 =0
 )
 (feed/history/boost_1_33_0.qbk
+-guid
+"http://www.boost.org/users/history/version_1_33_0.html
 -id
 "version_1_33_0
 -last_modified
-@Fri, 13 Apr 2018 08:16:15 +0000
+@Fri, 13 Apr 2018 10:15:19 +0000
 -location
 "users/history/version_1_33_0.html
 -notice
@@ -1102,10 +1188,12 @@
 =1
 )
 (feed/history/boost_1_33_1.qbk
+-guid
+"http://www.boost.org/users/history/version_1_33_1.html
 -id
 "version_1_33_1
 -last_modified
-@Fri, 13 Apr 2018 08:16:15 +0000
+@Fri, 13 Apr 2018 10:15:19 +0000
 -location
 "users/history/version_1_33_1.html
 -notice
@@ -1128,10 +1216,12 @@
 =1
 )
 (feed/history/boost_1_34_0.qbk
+-guid
+"http://www.boost.org/users/history/version_1_34_0.html
 -id
 "version_1_34_0
 -last_modified
-@Fri, 13 Apr 2018 08:16:15 +0000
+@Fri, 13 Apr 2018 10:15:19 +0000
 -location
 "users/history/version_1_34_0.html
 -notice
@@ -1156,10 +1246,12 @@
 =1
 )
 (feed/history/boost_1_34_1.qbk
+-guid
+"http://www.boost.org/users/history/version_1_34_1.html
 -id
 "version_1_34_1
 -last_modified
-@Fri, 13 Apr 2018 08:16:15 +0000
+@Fri, 13 Apr 2018 10:15:19 +0000
 -location
 "users/history/version_1_34_1.html
 -notice
@@ -1181,6 +1273,8 @@
 =1
 )
 (feed/history/boost_1_35_0.qbk
+-guid
+"http://www.boost.org/users/history/version_1_35_0.html
 -id
 "version_1_35_0
 -last_modified
@@ -1209,6 +1303,8 @@
 =0
 )
 (feed/history/boost_1_36_0.qbk
+-guid
+"http://www.boost.org/users/history/version_1_36_0.html
 -id
 "version_1_36_0
 -last_modified
@@ -1236,6 +1332,8 @@
 =0
 )
 (feed/history/boost_1_37_0.qbk
+-guid
+"http://www.boost.org/users/history/version_1_37_0.html
 -id
 "version_1_37_0
 -last_modified
@@ -1262,6 +1360,8 @@
 =0
 )
 (feed/history/boost_1_38_0.qbk
+-guid
+"http://www.boost.org/users/history/version_1_38_0.html
 -id
 "version_1_38_0
 -last_modified
@@ -1291,6 +1391,8 @@
 =1
 )
 (feed/history/boost_1_39_0.qbk
+-guid
+"http://www.boost.org/users/history/version_1_39_0.html
 -id
 "version_1_39_0
 -last_modified
@@ -1318,6 +1420,8 @@
 =0
 )
 (feed/history/boost_1_40_0.qbk
+-guid
+"http://www.boost.org/users/history/version_1_40_0.html
 -id
 "version_1_40_0
 -last_modified
@@ -1345,6 +1449,8 @@
 =0
 )
 (feed/history/boost_1_41_0.qbk
+-guid
+"http://www.boost.org/users/history/version_1_41_0.html
 -id
 "version_1_41_0
 -last_modified
@@ -1374,6 +1480,8 @@
 =0
 )
 (feed/history/boost_1_42_0.qbk
+-guid
+"http://www.boost.org/users/history/version_1_42_0.html
 -id
 "version_1_42_0
 -last_modified
@@ -1401,6 +1509,8 @@
 =0
 )
 (feed/history/boost_1_43_0.qbk
+-guid
+"http://www.boost.org/users/history/version_1_43_0.html
 -id
 "version_1_43_0
 -last_modified
@@ -1429,6 +1539,8 @@
 =0
 )
 (feed/history/boost_1_44_0.qbk
+-guid
+"http://www.boost.org/users/history/version_1_44_0.html
 -id
 "version_1_44_0
 -last_modified
@@ -1457,6 +1569,8 @@
 =0
 )
 (feed/history/boost_1_45_0.qbk
+-guid
+"http://www.boost.org/users/history/version_1_45_0.html
 -id
 "version_1_45_0
 -last_modified
@@ -1484,6 +1598,8 @@
 =0
 )
 (feed/history/boost_1_46_0.qbk
+-guid
+"http://www.boost.org/users/history/version_1_46_0.html
 -id
 "version_1_46_0
 -last_modified
@@ -1512,6 +1628,8 @@
 =1
 )
 (feed/history/boost_1_46_1.qbk
+-guid
+"http://www.boost.org/users/history/version_1_46_1.html
 -id
 "version_1_46_1
 -last_modified
@@ -1538,6 +1656,8 @@
 =0
 )
 (feed/history/boost_1_47_0.qbk
+-guid
+"http://www.boost.org/users/history/version_1_47_0.html
 -id
 "version_1_47_0
 -last_modified
@@ -1566,6 +1686,8 @@
 =0
 )
 (feed/history/boost_1_48_0.qbk
+-guid
+"http://www.boost.org/users/history/version_1_48_0.html
 -id
 "version_1_48_0
 -last_modified
@@ -1593,6 +1715,8 @@
 =0
 )
 (feed/history/boost_1_49_0.qbk
+-guid
+"http://www.boost.org/users/history/version_1_49_0.html
 -id
 "version_1_49_0
 -last_modified
@@ -1620,10 +1744,12 @@
 =0
 )
 (feed/history/boost_1_50_0.qbk
+-guid
+"http://www.boost.org/users/history/version_1_50_0.html
 -id
 "version_1_50_0
 -last_modified
-@Fri, 13 Apr 2018 08:16:15 +0000
+@Fri, 13 Apr 2018 10:15:19 +0000
 -location
 "users/history/version_1_50_0.html
 -notice
@@ -1649,10 +1775,12 @@
 =1
 )
 (feed/history/boost_1_51_0.qbk
+-guid
+"http://www.boost.org/users/history/version_1_51_0.html
 -id
 "version_1_51_0
 -last_modified
-@Fri, 13 Apr 2018 08:16:15 +0000
+@Fri, 13 Apr 2018 10:15:19 +0000
 -location
 "users/history/version_1_51_0.html
 -notice
@@ -1676,6 +1804,8 @@
 =1
 )
 (feed/history/boost_1_52_0.qbk
+-guid
+"http://www.boost.org/users/history/version_1_52_0.html
 -id
 "version_1_52_0
 -last_modified
@@ -1706,6 +1836,8 @@
 =0
 )
 (feed/history/boost_1_53_0.qbk
+-guid
+"http://www.boost.org/users/history/version_1_53_0.html
 -id
 "version_1_53_0
 -last_modified
@@ -1735,6 +1867,8 @@
 =0
 )
 (feed/history/boost_1_54_0.qbk
+-guid
+"http://www.boost.org/users/history/version_1_54_0.html
 -id
 "version_1_54_0
 -last_modified
@@ -1765,10 +1899,12 @@
 =0
 )
 (feed/history/boost_1_55_0.qbk
+-guid
+"http://www.boost.org/users/history/version_1_55_0.html
 -id
 "version_1_55_0
 -last_modified
-@Fri, 13 Apr 2018 08:16:15 +0000
+@Fri, 13 Apr 2018 10:15:19 +0000
 -location
 "users/history/version_1_55_0.html
 -notice
@@ -1795,6 +1931,8 @@
 =1
 )
 (feed/history/boost_1_56_0.qbk
+-guid
+"http://www.boost.org/users/history/version_1_56_0.html
 -id
 "version_1_56_0
 -last_modified
@@ -1826,6 +1964,8 @@
 =0
 )
 (feed/history/boost_1_57_0.qbk
+-guid
+"http://www.boost.org/users/history/version_1_57_0.html
 -id
 "version_1_57_0
 -last_modified
@@ -1854,6 +1994,8 @@
 =0
 )
 (feed/history/boost_1_58_0.qbk
+-guid
+"http://www.boost.org/users/history/version_1_58_0.html
 -id
 "version_1_58_0
 -last_modified
@@ -1883,6 +2025,8 @@
 =0
 )
 (feed/history/boost_1_59_0.qbk
+-guid
+"http://www.boost.org/users/history/version_1_59_0.html
 -id
 "version_1_59_0
 -last_modified
@@ -1911,6 +2055,8 @@
 =0
 )
 (feed/history/boost_1_60_0.qbk
+-guid
+"http://www.boost.org/users/history/version_1_60_0.html
 -id
 "version_1_60_0
 -last_modified
@@ -1939,6 +2085,8 @@
 =0
 )
 (feed/history/boost_1_61_0.qbk
+-guid
+"http://www.boost.org/users/history/version_1_61_0.html
 -id
 "version_1_61_0
 -last_modified
@@ -1966,6 +2114,8 @@
 =0
 )
 (feed/history/boost_1_62_0.qbk
+-guid
+"http://www.boost.org/users/history/version_1_62_0.html
 -id
 "version_1_62_0
 -last_modified
@@ -1994,6 +2144,8 @@
 =0
 )
 (feed/history/boost_1_63_0.qbk
+-guid
+"http://www.boost.org/users/history/version_1_63_0.html
 -id
 "version_1_63_0
 -last_modified
@@ -2021,6 +2173,8 @@
 =1
 )
 (feed/history/boost_1_64_0.qbk
+-guid
+"http://www.boost.org/users/history/version_1_64_0.html
 -id
 "version_1_64_0
 -last_modified
@@ -2048,6 +2202,8 @@
 =11
 )
 (feed/history/boost_1_65_0.qbk
+-guid
+"http://www.boost.org/users/history/version_1_65_0.html
 -id
 "version_1_65_0
 -last_modified
@@ -2075,6 +2231,8 @@
 =15
 )
 (feed/history/boost_1_65_1.qbk
+-guid
+"http://www.boost.org/users/history/version_1_65_1.html
 -id
 "version_1_65_1
 -last_modified
@@ -2099,6 +2257,8 @@
 =4
 )
 (feed/history/boost_1_66_0.qbk
+-guid
+"http://www.boost.org/users/history/version_1_66_0.html
 -id
 "version_1_66_0
 -last_modified
@@ -2125,10 +2285,12 @@
 =10
 )
 (feed/history/boost_1_67_0.qbk
+-guid
+"http://www.boost.org/users/history/version_1_67_0.html
 -id
 "version_1_67_0
 -last_modified
-@Fri, 13 Apr 2018 08:18:09 +0000
+@Mon, 09 Apr 2018 10:24:21 +0000
 -location
 "users/history/version_1_67_0.html
 -notice
@@ -2138,10 +2300,10 @@
 -purpose
 "
 "      New Libraries: Contract, HOF. Updated Libraries: Asio, Atomic, Beast, Container
-"      Hash, Context, Core, Coroutine2, DateTime, DLL, Fiber, Filesystem, Fusion,
-"      Locale, Log, Math, Multi-index Containers, Multiprecision, Optional, Phoenix,
-"      PolyCollection, Python, Spirit, Stacktrace, Test, TypeIndex, TypeTraits, Unordered,
-"      Units, Uuid, Utility, Variant.
+"      Hash, Context, Coroutine2, DateTime, DLL, Fiber, Filesystem, Fusion, Locale,
+"      Log, Math, Multi-index Containers, Multiprecision, Optional, Phoenix, PolyCollection,
+"      Python, Spirit, Stacktrace, Test, TypeIndex, TypeTraits, Unordered, Units,
+"      Uuid, Utility, Variant.
 "
 -qbk_hash
 "e1c48bbec69dc183c8c759984ed9b8e7357fecaf6a2940ad6bcde596123155b4
@@ -2150,9 +2312,11 @@
 -title
 "Version 1.67.0
 -update_count
-=15
+=14
 )
 (feed/history/unversioned.qbk
+-guid
+"http://www.boost.org/users/history/old_versions.html
 -id
 "old_versions
 -last_modified
@@ -2178,6 +2342,8 @@
 =0
 )
 (feed/news/locale_1_53_0.qbk
+-guid
+"http://www.boost.org/users/news/boost_locale_security_notice.html
 -id
 "boost_locale_security_notice
 -last_modified
@@ -2203,6 +2369,8 @@
 =0
 )
 (feed/news/old_compilers.qbk
+-guid
+"http://www.boost.org/users/news/old_compilers.html
 -id
 "old_compilers
 -last_modified
@@ -2228,10 +2396,12 @@
 =0
 )
 (feed/news/result_of_1_52_0.qbk
+-guid
+"http://www.boost.org/users/news/a_special_note_for_boost_1_52_0_and_higher.html
 -id
 "a_special_note_for_boost_1_52_0_and_higher
 -last_modified
-@Fri, 13 Apr 2018 08:16:15 +0000
+@Fri, 13 Apr 2018 10:15:19 +0000
 -location
 "users/news/a_special_note_for_boost_1_52_0_and_higher.html
 -notice
@@ -2253,6 +2423,8 @@
 =1
 )
 (feed/news/review_asio_begins.qbk
+-guid
+"http://www.boost.org/users/news/asio_formal_review_begins.html
 -id
 "asio_formal_review_begins
 -last_modified
@@ -2280,6 +2452,8 @@
 =0
 )
 (feed/news/website_launch.qbk
+-guid
+"http://www.boost.org/users/news/website_1_0_launch.html
 -id
 "website_1_0_launch
 -last_modified

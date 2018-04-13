@@ -12299,6 +12299,12 @@
 "            </li>
 "            <li>
 "              <div>
+"                Added explicit support for <code><span class="identifier">vector</span><span class="special">&lt;</span><span class="keyword">bool</span><span class="special">&gt;</span></code>, so that it will work with libc++
+"                (<a href="https://svn.boost.org/trac/boost/ticket/13501">#13501</a>).
+"              </div>
+"            </li>
+"            <li>
+"              <div>
 "                More detail in the <a href="/doc/html/hash/changes.html#hash.changes.boost_1_67_0">library
 "                change log</a>.
 "              </div>
@@ -13762,7 +13768,7 @@
 "  </div>
 "
 -hash
-"470d77b64aa5be6d1799e5f92facd74da0c502690c4e25b93c974e88286f837a
+"464327346d7ae95ae7c09020311bfdb2341dbad8d786a80282e2e88087da4d8c
 -id
 "version_1_67_0
 -notice_url
