@@ -1687,27 +1687,31 @@
         "downloads.7z.sha256":
             "1cd94f03a71334a67d36f5161b57f5931e0cd6ecf726d7aca8bd82a3be720b74",
         "downloads.7z.url":
-            "https:\/\/dl.bintray.com\/boostorg\/release\/1.67.0\/source\/boost_1_67_0_rc2.7z",
+            "https:\/\/dl.bintray.com\/boostorg\/release\/1.67.0\/source\/boost_1_67_0.7z",
         "downloads.bz2.line_endings":
             "unix",
         "downloads.bz2.sha256":
             "2684c972994ee57fc5632e03bf044746f6eb45d4920c343937a465fd67a5adba",
         "downloads.bz2.url":
-            "https:\/\/dl.bintray.com\/boostorg\/release\/1.67.0\/source\/boost_1_67_0_rc2.tar.bz2",
+            "https:\/\/dl.bintray.com\/boostorg\/release\/1.67.0\/source\/boost_1_67_0.tar.bz2",
         "downloads.gz.line_endings":
             "unix",
         "downloads.gz.sha256":
             "8aa4e330c870ef50a896634c931adf468b21f8a69b77007e45c444151229f665",
         "downloads.gz.url":
-            "https:\/\/dl.bintray.com\/boostorg\/release\/1.67.0\/source\/boost_1_67_0_rc2.tar.gz",
+            "https:\/\/dl.bintray.com\/boostorg\/release\/1.67.0\/source\/boost_1_67_0.tar.gz",
         "downloads.zip.line_endings":
             "windows",
         "downloads.zip.sha256":
             "7e37372d8cedd0fd6b7529e9dd67c2cb1c60e6c607aed721f5894d704945a7ec",
         "downloads.zip.url":
-            "https:\/\/dl.bintray.com\/boostorg\/release\/1.67.0\/source\/boost_1_67_0_rc2.zip",
-        "release_status":
-            "dev"
+            "https:\/\/dl.bintray.com\/boostorg\/release\/1.67.0\/source\/boost_1_67_0.zip",
+        "release_date":
+            "Sat, 14 Apr 2018 20:37:12 +0000",
+        "third_party.windows.title":
+            "Windows Binaries",
+        "third_party.windows.url":
+            "https:\/\/dl.bintray.com\/boostorg\/release\/1.67.0\/binaries\/"
     },
     "boost-1.67.0 beta1": {
         "documentation":
@@ -1744,5 +1748,69 @@
             "Windows Binaries",
         "third_party.windows.url":
             "https:\/\/dl.bintray.com\/boostorg\/beta\/1.67.0.beta.1\/binaries\/"
+    },
+    "boost-1.68.0": {
+        "documentation":
+            "\/doc\/libs\/1_68_0\/",
+        "download_page":
+            "https:\/\/dl.bintray.com\/boostorg\/release\/1.68.0\/source\/",
+        "downloads.7z.line_endings":
+            "windows",
+        "downloads.7z.sha256":
+            "59804d8fad02cf3b09485f3dbc0f9097c05fc1e0123f0c133b35a6c6f601109a",
+        "downloads.7z.url":
+            "https:\/\/dl.bintray.com\/boostorg\/release\/1.68.0\/source\/boost_1_68_0.7z",
+        "downloads.bz2.line_endings":
+            "unix",
+        "downloads.bz2.sha256":
+            "7f6130bc3cf65f56a618888ce9d5ea704fa10b462be126ad053e80e553d6d8b7",
+        "downloads.bz2.url":
+            "https:\/\/dl.bintray.com\/boostorg\/release\/1.68.0\/source\/boost_1_68_0.tar.bz2",
+        "downloads.gz.line_endings":
+            "unix",
+        "downloads.gz.sha256":
+            "da3411ea45622579d419bfda66f45cd0f8c32a181d84adfa936f5688388995cf",
+        "downloads.gz.url":
+            "https:\/\/dl.bintray.com\/boostorg\/release\/1.68.0\/source\/boost_1_68_0.tar.gz",
+        "downloads.zip.line_endings":
+            "windows",
+        "downloads.zip.sha256":
+            "3b1db0b67079266c40b98329d85916e910bbadfc3db3e860c049056788d4d5cd",
+        "downloads.zip.url":
+            "https:\/\/dl.bintray.com\/boostorg\/release\/1.68.0\/source\/boost_1_68_0.zip",
+        "release_date":
+            "Thu, 09 Aug 2018 03:46:16 +0000"
+    },
+    "boost-1.68.0 beta1": {
+        "documentation":
+            "\/doc\/libs\/1_68_0_beta1\/",
+        "download_page":
+            "https:\/\/dl.bintray.com\/boostorg\/beta\/1.68.0.beta1\/source\/",
+        "downloads.7z.line_endings":
+            "windows",
+        "downloads.7z.sha256":
+            "961d2bdc74c1499c931b32098842abba8883b1a89ef5c8f8f0ab0aff771a3ce5",
+        "downloads.7z.url":
+            "https:\/\/dl.bintray.com\/boostorg\/beta\/1.68.0.beta1\/source\/boost_1_68_0_b1.7z",
+        "downloads.bz2.line_endings":
+            "unix",
+        "downloads.bz2.sha256":
+            "0364846258648e39908ca7cebfc2d2216eef6980c32aaf8276d2cfe73ef012e3",
+        "downloads.bz2.url":
+            "https:\/\/dl.bintray.com\/boostorg\/beta\/1.68.0.beta1\/source\/boost_1_68_0_b1.tar.bz2",
+        "downloads.gz.line_endings":
+            "unix",
+        "downloads.gz.sha256":
+            "d99105685a68907a76b0479ecde77915423246236ef0db9cb846c5bfc09b41f3",
+        "downloads.gz.url":
+            "https:\/\/dl.bintray.com\/boostorg\/beta\/1.68.0.beta1\/source\/boost_1_68_0_b1.tar.gz",
+        "downloads.zip.line_endings":
+            "windows",
+        "downloads.zip.sha256":
+            "6158e0e961bfb0d8adeb2ea70337b08504668258025f0a873fb21eee3436d22e",
+        "downloads.zip.url":
+            "https:\/\/dl.bintray.com\/boostorg\/beta\/1.68.0.beta1\/source\/boost_1_68_0_b1.zip",
+        "release_date":
+            "Tue, 10 Jul 2018 22:50:54 +0000"
     }
 }

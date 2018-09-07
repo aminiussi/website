@@ -18,6 +18,20 @@
 
 [import ext.qbk]
 
+[section Known Issues]
+
+These are patches from library authors which were found too
+late to be fixed in the release. Be careful as they have
+not been through the normal testing process.
+
+* Fix compiling with FreeBSD:
+  * [@/patches/1_67_0/0001-Fiber-Use-pthread_setaffinity_np-on-FreeBSD-as-well.patch]
+  * [@/patches/1_67_0/0002-Wave-Avoid-using-wrong-T_DIVIDE-on-BSDs.patch]
+* Fix Python auto-linking:
+  * [@/patches/1_67_0/0003-Python-Fix-auto-linking-logic-Windows-only.patch]
+
+[endsect]
+
 [section New Libraries]
 
 * [phrase library..[@/libs/contract/ Contract]:]
@@ -91,7 +105,7 @@
   * Extracted from the functional module to break a dependency cycle.
   * Moved headers to new location to reflect name change, the old include paths
     will still work.
-  * Added support for `std::string_view`, `std::error_code`, `std::error_condition`
+  * Added support for `std::string_view`, `std::error_code`, `std::error_condition`,
     `std::optional`, `std::variant`, `std::monostate` where available.
   * Added explicit support for `vector<bool>`, so that it will work with
     libc++ ([ticket 13501]).
@@ -166,6 +180,28 @@
   * Added limits precheck on sequence converter to make error message clearer. ([github_pr fusion 168])
   * Allow incomplete types in `fusion::tag_of` and `fusion::is_native_fusion_sequence`.
     Note that this changes no behaviour from previous release, but compliant to TypeTraits's change. ([github_pr fusion 171])
+
+* [phrase library..[@/libs/geometry/ Geometry]:]
+  * Improvements:
+    * New map projection and SRS transformation representations (undocumented for now due to potential interface changes).
+    * New densify() algorithm.
+    * No longer using std::iterator (thanks to Daniela Engert).
+    * No longer using allocator directly in the rtree. Replaced with boost::container::allocator_traits (thanks to Daniela Engert).
+    * Default rtree allocator changed to boost::container::new_allocator to still support move semantics emulation in C++03 with boost::container::allocator_traits.
+    * Area strategies interface changed. This is potentially a breaking change.
+    * Radius or Sphere can be passed into spherical strategies.
+    * Added Point-Box and Box-Box spherical and geographic distance() strategies.
+    * Simplify (multi)polygons will discard output rings of 2 points or (for closed polygons) 3 points, but it tries to avoid creating those
+    * Simplify (multi)polygons will omit empty interior rings or polygons from output
+  * Solved issues:
+    * [@https://svn.boost.org/trac10/ticket/13386 13386] Workaround for some gcc compilers
+    * [@https://svn.boost.org/trac10/ticket/13381 13381] Compile error with matrix_transformer in Visual C++ 2015
+    * [@https://svn.boost.org/trac10/ticket/13436 13436] Incorrectness in boost::geometry::model::polygon documentation
+  * Bugfixes:
+    * Add missing strategy resolving in length() algorithm, affecting Variant support.
+    * Simplify (multi)polygons now simplifies closing point
+  * Changes in behavior
+    * Simplify (multi)polygons now usually rotates input rings before simplifying to select a non collinear point on its convex hull. This improves output.
 
 * [phrase library..[@/libs/locale/ Locale]:]
   * Added support of `unique_ptr` interface in addition to C++2003 `auto_ptr` - in order to support C++2017, now you can use `BOOST_LOCALE_HIDE_AUTO_PTR` definiton to remove `auto_ptr` from the interfaces and prevent deprecated watnings.
